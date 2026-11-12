@@ -649,7 +649,7 @@ window.DECK = {
                   ["Operator dashboard", "React"],
                   ["Backend", "FastAPI, Python"],
                   ["Database", "PostgreSQL"],
-                  ["Database access and migrations", "Prisma"],
+                  ["Database access and migrations", "SQLALCHEMY"],
                   ["Payments", "Safaricom Daraja for M-Pesa"],
                   [
                      "Network",
