@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Weza Wi-Fi Billing System – Pilot Project Scope</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" data-view="title">
+  <!-- ambient background -->
+  <div class="bg"><i class="glow g1"></i><i class="glow g2"></i><i class="ring r1"></i><i class="ring r2"></i></div>
+
+  <!-- flowing light streaks along edges and curves -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wf" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M6 12.6a9 9 0 0 1 12 0"/><path d="M9.3 16a4.4 4.4 0 0 1 5.4 0"/><circle cx="12" cy="19.6" r="1.4" fill="currentColor" stroke="none"/></symbol></svg>
+  <svg class="streaks" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#755898" stop-opacity="0"/><stop offset=".55" stop-color="#755898"/><stop offset="1" stop-color="#B5D334"/></linearGradient></defs>
+    <path class="st s1" pathLength="100" d="M0 560 C 250 600, 420 470, 640 540 S 900 600, 1000 520"/>
+    <path class="st s2" pathLength="100" d="M1000 40 C 800 0, 700 120, 520 60 S 200 0, 0 70"/>
+    <path class="st s3" pathLength="100" d="M12 0 L12 600"/>
+    <path class="st s4" pathLength="100" d="M988 600 L988 0"/>
+  </svg>
+
+  <!-- title slide -->
+  <section id="title" class="page">
+    <div class="emit" id="emit" aria-hidden="true"></div>
+    <div class="emblem neo"><i><svg viewBox="0 0 24 24" fill="none" stroke="#755898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".9" fill="#B5D334" stroke="#B5D334"/></svg></i><b class="spin"></b></div>
+    <div class="tcard glass">
+      <h1 id="t-head"></h1>
+      <dl class="meta" id="t-meta"></dl>
+      <div class="row"><button class="btn" id="t-btn">Start Presentation</button></div>
+    </div>
+  </section>
+
+  <!-- persistent outline wheel (morphs between centred + left arc) -->
+  <div class="wheel" id="wheel"><i class="orbit"></i><button class="hub neo" id="hub"></button></div>
+
+  <!-- content slide -->
+  <section id="content" class="page">
+    <article class="card glass" id="card">
+      <header class="chead"><h2 id="c-title"></h2><span class="ico neo" id="c-ico" aria-hidden="true"></span></header>
+      <div class="body" id="c-body"></div>
+    </article>
+    <article class="card glass ghost" id="ghost" aria-hidden="true"><header class="chead"><h2 id="g-title"></h2><span class="ico neo"></span></header><div class="body" id="g-body"></div></article>
+  </section>
+
+  <div class="hud glass">
+    <button class="neo nav" id="prev" aria-label="Previous">‹</button>
+    <span id="count"></span>
+    <button class="neo nav" id="next" aria-label="Next">›</button>
+  </div>
+</div>
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
